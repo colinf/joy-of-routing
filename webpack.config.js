@@ -3,7 +3,11 @@ module.exports = {
   module: {
     loaders: [{
       test: /\.css?$/,
-      loader: 'style!css?modules&localIdentName=[name]---[local]---[hash:base64:5]'
+      loader: 'style-loader!css-loader'
+    },
+    {
+      test: /\.(png|jpg|gif)$/,
+      loader: "file-loader?name=img/img-[hash:6].[ext]"
     },
     {
       test: /\.js?$/,
