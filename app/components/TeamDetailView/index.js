@@ -4,10 +4,10 @@ export default Component (({
   state: {app: {selectedTeamId}, teams: {data}},
   signals
 }) => {
-  if (!selectedTeamId) return <div id="main" className="pure-u-4-5"></div>
+  if (!selectedTeamId) return <div id="main" className="pure-u-1"></div>
   const {id, name, stadium} = data[selectedTeamId];
   return (
-    <div id="main" className="pure-u-4-5">
+    <div id="main" className="pure-u-1">
       <div className="team-content">
         <div className="team-content-header">
             <h1 className="team-content-title">{name}</h1>
@@ -37,9 +37,9 @@ export default Component (({
                 <input id="stadiumCapacity" type="text" value={stadium.capacity} readOnly />
               </div>
             </fieldset>
-            <button class="pure-button"
+            <button className="pure-button secondary-button"
                     type="button"
-                    on-click={() => signals.teams.teamClosed()}
+                    on-click={() => signals.teams.opened()}
             >
               Close
             </button>

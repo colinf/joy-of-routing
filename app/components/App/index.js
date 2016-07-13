@@ -14,7 +14,7 @@ const renderPage = pageText => {
   if (Page) {
     return <Page />
   } else {
-    return <div>Please select a page using the tabs on the left.</div>
+    return <div className="pure-u-1 home-page">Please select a page using the tabs on the left.</div>
   }
 }
 
@@ -47,9 +47,7 @@ export default Component(({
         </div>
       </div>
 
-      <div className="pure-u-1">
         {renderPage(currentPage)}
-      </div>
 
     </div>
   );

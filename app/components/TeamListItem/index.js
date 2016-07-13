@@ -11,7 +11,7 @@ export default Component (({
        on-click={onClick}
   >
     <div className="pure-u-1">
-      <h5 className="email-name">{name}</h5>
+      <h5 className="team-name">{name}</h5>
     </div>
   </div>
 ));

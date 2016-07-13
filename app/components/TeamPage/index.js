@@ -3,7 +3,7 @@ import TeamList from '../TeamList';
 import TeamDetailView from '../TeamDetailView';
 
 export default Component (() => (
-  <div className="pure-g">
+  <div>
     <TeamList />
     <TeamDetailView />
   </div>

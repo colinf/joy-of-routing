@@ -6,7 +6,7 @@ export default Component(({
   signals
 }) => {
   return (
-    <div id="list" className="pure-u-1-5">
+    <div id="list" className="pure-u-1">
       {byName.map(team =>
         <TeamListItem
           key={team.id}

@@ -5,13 +5,18 @@ body {
     color: #333;
 }
 
-
-
 a {
     text-decoration: none;
     color: #1b98f8;
 }
 
+.home-page {
+    margin-top: 50px;
+}
+
+.pure-img {
+    margin-left: -150px;
+}
 
 /*
  * -- HELPER STYLES --
@@ -109,29 +114,6 @@ a {
  * -- TEAM STYLES --
  * Styles relevant to the team messages, labels, counts, and more.
  */
-.team-count {
-    color: rgb(75, 113, 151);
-}
-
-.team-label-personal,
-.team-label-work,
-.team-label-travel {
-    width: 15px;
-    height: 15px;
-    display: inline-block;
-    margin-right: 0.5em;
-    border-radius: 3px;
-}
-.team-label-personal {
-    background: #ffc94c;
-}
-.team-label-work {
-    background: #41ccb4;
-}
-.team-label-travel {
-    background: #40c365;
-}
-
 
 /* Team Item Styles */
 .team-item {
@@ -139,9 +121,8 @@ a {
     border-bottom: 1px solid #ddd;
     border-left: 6px solid transparent;
 }
-.team-avatar {
-    border-radius: 3px;
-    margin-right: 0.5em;
+.team-item:hover {
+    background: #eee;
 }
 .team-name,
 .team-subject {
@@ -151,16 +132,8 @@ a {
     text-transform: uppercase;
     color: #999;
 }
-.team-desc {
-    font-size: 80%;
-    margin: 0.4em 0;
-}
-
 .team-item-selected {
     background: #eee;
-}
-.team-item-unread {
-    border-left: 6px solid #1b98f8;
 }
 
 /* Team Content Styles */
@@ -174,27 +147,6 @@ a {
 .team-content-title {
     margin: 0.5em 0 0;
 }
-.team-content-subtitle {
-    font-size: 1em;
-    margin: 0;
-    font-weight: normal;
-}
-.team-content-subtitle span {
-    color: #999;
-}
-.team-content-controls {
-    margin-top: 2em;
-    text-align: right;
-}
-.team-content-controls .secondary-button {
-    margin-bottom: 0.3em;
-}
-
-.team-avatar {
-    width: 40px;
-    height: 40px;
-}
-
 
 /*
  * -- TABLET (AND UP) MEDIA QUERIES --
@@ -263,6 +215,12 @@ a {
     #list {
         margin-left: -350px;
         width:350px;
+        height: 100%;
+        border-right: 1px solid #ddd;
+    }
+    #list2 {
+        margin-left: -350px;
+        width:600px;
         height: 100%;
         border-right: 1px solid #ddd;
     }
